@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../Tracing"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../portfoliO"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "day 5 of 30 days of code"
+	}
+}
