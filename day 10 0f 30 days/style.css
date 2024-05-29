@@ -1,0 +1,69 @@
+body{
+  background-image: url(./image/gradient-navy-blue-light-background-free-vector.jpg);
+}
+.login-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+.logo{
+  border-radius: 110%;
+  width: 104px;
+  margin-left: 30%;
+}
+
+.login-box {
+  width: 300px;
+  padding: 20px;
+  background-color: hsla(194.7, 53.3%, 79%, 0.5);
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ border-radius: 40px;}
+.btn{
+  margin: 0px;
+}
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  height: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+border-radius: 10px;
+}
+  #pass{
+    margin-top: 0%;
+    margin-bottom: 15px;
+  }
+  
+        button{
+          background-color: blue;
+        }
+  button:hover {
+       background-color: lightblue;
+      cursor: pointer;
+    }
+  
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    a:hover {
+      color: blue;
+    }
+   input[type=text]:hover{
+      color: greenyellow;
+    }
