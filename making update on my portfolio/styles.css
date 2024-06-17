@@ -1,4 +1,3 @@
-/*---------------------day 25 add css to the home page---------*/
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
@@ -129,7 +128,7 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
-  
+
 }
 
 @media screen and (max-width: 767px) {
@@ -157,6 +156,16 @@ img {
 .nav__link:hover {
   position: relative;
 }
+ nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.4s;
+} 
 
 .nav__link:hover::after {
   position: absolute;
@@ -188,8 +197,9 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
-.l-header{
-    background-image: url(/img/creative-geometric-design-space_53876-89781.avif);
+
+.l-header {
+  background-image: url(/img/creative-geometric-design-space_53876-89781.avif);
 }
 
 /*=== Show menu ===*/
@@ -204,9 +214,11 @@ img {
   padding: 4rem 0 5rem;
 
 }
-.btn{
+
+.btn {
   background-image: url(/img/creative-geometric-design-space_53876-89781.avif);
 }
+
 .home__data {
   align-self: center;
 }
@@ -235,149 +247,4 @@ img {
 
 .home__social-icon:hover {
   color: var(--first-color);
-}
-
-.home__img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 260px;
-  
-}
-
-/*----------------------------------BUTTONS---------------------------------------------------------*/
-.button {
-  display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
-  padding: 0.75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: 0.5rem;
-  transition: 0.3s;
-}
-
-.button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
-}
-/* ===== MEDIA QUERIES=====*/
-@media screen and (max-width: 320px) {
-  .home {
-    row-gap: 2rem;
-  }
-
-  .home__img {
-    width: 200px;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .home {
-    padding: 4rem 0 2rem;
-  }
-
-  .home__social {
-    padding-top: 0;
-    padding-bottom: 2.5rem;
-    flex-direction: row;
-    align-self: flex-end;
-  }
-
-  .home__social-icon {
-    margin-bottom: 0;
-    margin-right: var(--mb-4);
-  }
-
-  .home__img {
-    width: 300px;
-    bottom: 25%;
-  }
-
-  .about__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    text-align: initial;
-  }
-
-  .skills__container {
-    grid-template-columns: 0.7fr;
-    justify-content: center;
-    column-gap: 1rem;
-  }
-
-  .work__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    padding-top: 2rem;
-  }
-
-  .contact__form {
-    width: 360px;
-    padding-top: 2rem;
-  }
-
-  .contact__container {
-    justify-items: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    margin: 0;
-  }
-
-  .section {
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-  }
-
-  .section-title {
-    margin-bottom: var(--mb-6);
-  }
-
-  .section-title::after {
-    width: 80px;
-    top: 3rem;
-  }
-
-  .nav {
-    height: calc(var(--header-height) + 1.5rem);
-  }
-
-  .nav__list {
-    display: flex;
-    padding-top: 0;
-  }
-
-  .nav__item {
-    margin-left: var(--mb-6);
-    margin-bottom: 0;
-  }
-
-  .nav__toggle {
-    display: none;
-  }
-
-  .nav__link {
-    color: var(--second-color);
-  }
-
-  .home {
-    padding: 8rem 0 2rem;
-  }
-
-  .home__img {
-    width: 400px;
-    bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .bd-grid {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .home {
-    padding: 10rem 0 2rem;
-  }
 }
